@@ -47,7 +47,7 @@ def get_filters():
 
     month, day = 'all', 'all'
     while(True):
-        choice = input('Would you like to filter the data by month, day, both, none?\n')
+        choice = input('Would you like to filter the data by month, day, both, none?\n').lower().strip()
         if (choice in choices):
             if choice == 'month':
                 # get user input for month (all, january, february, ... , june)
